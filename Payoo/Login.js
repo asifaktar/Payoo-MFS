@@ -11,4 +11,19 @@ document.getElementById("btn-login").addEventListener("click", function(event){
     const phoneNumber = document.getElementById('phone-number').value;
     console.log(phoneNumber)
 
+    // step no 4 get the pin number;
+    const pinNumber = document.getElementById('pin-number').value;
+    console.log(pinNumber)
+
+    //condition wes logic.
+    if (phoneNumber === "7" && pinNumber === "12345"){
+        console.log("walikumussalam o rohamatullahe o barakatuthu.");
+
+        // onno html file set korar jonno ata likha hoyeche.
+        window.location.href = "/homepage.html";
+    }
+    else {
+        alert("wrong number please enter the correct number.")
+    }
+
 })
