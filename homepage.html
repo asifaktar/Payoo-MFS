@@ -18,7 +18,7 @@
                 <div>
                     <div class="stats shadow bg-slate-300 mt-14">
                         <div class="stat">
-                          <div class="stat-value text-gray-600 py-0">9400</div>
+                          <div id="account-balance" class="stat-value text-gray-600 py-0">9400</div>
                           <div class="stat-desc text-gray-500">--available balance</div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                 <div class="divider"></div>
                 <!--User action-->
                 <div> 
-                    <button class="btn bg-slate-500 border-none text-gray-300">Cash Out</button>
+                    <button class="btn bg-slate-500 border-none text-gray-300">Add Money</button>
                     <button class="btn bg-slate-500 border-none text-gray-300">Cash Out</button>
                 </div>
                 <div class="divider"></div>
@@ -38,17 +38,17 @@
                             <label class="label">
                               <span class="label-text">Amount to Add</span>
                             </label>
-                            <input class="bg-slate-300 text-gray-200 py-2 px-4 rounded-lg" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                            <input id="input-add-money" class="bg-slate-300 text-gray-600 py-2 px-4 rounded-lg" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text ">Pin Number</span>
                             </label>
-                            <input class="bg-slate-300 text-gray-300 py-3 pl-4 rounded-lg" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            <input id="input-add-pin" class="bg-slate-300 text-gray-600 py-3 pl-4 rounded-lg" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
                             
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Add Money</button>
+                            <button id="add-money" class="btn btn-primary">Add Money</button>
                           </div>
                         </div>
                     </form>
